@@ -7,7 +7,7 @@ import java.net.Socket;
 
 public class Server {
 
-    public static final Integer LOCALHOST_PORT = 8081;
+    public static final Integer LOCALHOST_PORT = 8082;
 
     public static void main(String[] args) {
 
@@ -23,6 +23,7 @@ public class Server {
             out.write("Write your name:" + "\n");
             out.flush(); // выталкиваем все из буфера
             //ждем сообщения от клиента
+
             String message = in.readLine();
 
             out.write("Are you child? (yes/no) " + "\n");
